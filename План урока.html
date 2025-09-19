@@ -1,0 +1,316 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Astrology Lesson Plan 🌟</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f9f7f1, #e0f7fa);
+      margin: 0;
+      padding: 0 15px 40px;
+      color: #333;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px 10px;
+      background: #0097a7;
+      color: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    h2 {
+      color: #00796b;
+      margin-top: 40px;
+      font-weight: 600;
+    }
+    section {
+      background: white;
+      margin: 25px auto;
+      max-width: 800px;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .zodiac-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .zodiac-list li {
+      margin: 8px 0;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    .meme {
+      max-width: 100%;
+      margin-top: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      display: block;
+    }
+    p, li {
+      line-height: 1.5;
+    }
+    .quiz {
+      margin-top: 25px;
+    }
+    .quiz h3 {
+      margin-bottom: 15px;
+      color: #004d40;
+    }
+    .question {
+      margin-bottom: 15px;
+    }
+    .question p {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .options button {
+      margin: 5px 8px 8px 0;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 25px;
+      background: #009688;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .options button:hover {
+      background: #00796b;
+    }
+    .options button.correct {
+      background: #4caf50 !important;
+      cursor: default;
+    }
+    .options button.wrong {
+      background: #e53935 !important;
+      cursor: default;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #00796b;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: help;
+      border-bottom: 1px dotted #00796b;
+      color: #00796b;
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 140px;
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 7px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -70px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Astrology Lesson Plan 🌟</h1>
+  <p>English + Astrology | Fun & Easy</p>
+</header>
+
+<section id="intro" class="fade-in">
+  <h2>1. Warm-up: Let's Talk Signs!</h2>
+  <p><strong>Teacher:</strong> "Do you know your zodiac sign? What's your favorite sign and why?"</p>
+  <p><em>(Let the student answer. Encourage simple sentences.)</em></p>
+  <p><strong>Teacher:</strong> "Great! Today, we will learn about zodiac signs and adjectives to describe people."</p>
+</section>
+
+<section id="text" class="fade-in">
+  <h2>2. Reading: More Zodiac Signs</h2>
+  <p>Here are six more zodiac signs and their personalities:</p>
+  <ul class="zodiac-list">
+    <li><strong>Leo</strong> 🦁: Confident and warm. They love to be the center of attention and are very generous.</li>
+    <li><strong>Virgo</strong> ♍: Practical and kind. Virgos are hard workers and like everything neat and clean.</li>
+    <li><strong>Cancer</strong> 🦀: Emotional and caring. They protect their family and friends very well.</li>
+    <li><strong>Gemini</strong> ♊: Curious and talkative. They like to learn new things and make many friends.</li>
+    <li><strong>Libra</strong> ⚖️: Fair and social. Libras love harmony and good conversations.</li>
+    <li><strong>Scorpio</strong> 🦂: Strong and passionate. They can be mysterious but very loyal.</li>
+  </ul>
+  <p><em>Let's try to use adjectives to describe these signs!</em></p>
+</section>
+
+<section id="reading-text" class="fade-in">
+  <h2>2.1 Text for Reading: <em>Astrology and Zodiac Signs</em></h2>
+  <p><strong>Astrology and Zodiac Signs</strong></p>
+  <p>Astrology is the study of stars and planets. Many people believe that their zodiac sign can tell a lot about their personality. There are 12 zodiac signs. Each sign has different qualities.</p>
+  <p>For example, <strong>Aries</strong> is very confident and brave. They are sometimes impatient but always active. <strong>Taurus</strong> is patient and calm. They love comfort and are very reliable. <strong>Gemini</strong> is friendly and curious. They like talking and meeting new people.</p>
+  <p>People often say that <strong>Leo</strong> is the most confident sign, and <strong>Virgo</strong> is the most hardworking. <strong>Cancer</strong> is more emotional than other signs but also very caring.</p>
+  <p><strong>Do you know your zodiac sign?</strong> What qualities do people say about it?</p>
+</section>
+
+<section id="adj-lesson" class="fade-in">
+  <h2>3. Grammar Focus: Adjectives and Their Degrees</h2>
+  <p>We use adjectives to describe people. Let's learn about <span class="tooltip">degrees of comparison
+    <span class="tooltiptext">Positive, comparative, superlative forms</span>
+  </span>:</p>
+  <ul>
+    <li><strong>Positive:</strong> kind, strong, curious</li>
+    <li><strong>Comparative:</strong> kinder, stronger, more curious</li>
+    <li><strong>Superlative:</strong> the kindest, the strongest, the most curious</li>
+  </ul>
+  <p><em>Example:</em> "Leo is more confident than Cancer." / "Virgo is the most practical sign."</p>
+</section>
+
+<section id="quiz" class="fade-in quiz">
+  <h2>4. Mini Quiz: Choose the Correct Adjective Form</h2>
+
+  <div class="question" data-correct="more talkative">
+    <p>1. Gemini is __________ than Libra.</p>
+    <div class="options">
+      <button>talkative</button>
+      <button>more talkative</button>
+      <button>most talkative</button>
+    </div>
+  </div>
+
+  <div class="question" data-correct="stronger">
+    <p>2. Scorpio is __________ than Leo.</p>
+    <div class="options">
+      <button>strong</button>
+      <button>stronger</button>
+      <button>strongest</button>
+    </div>
+  </div>
+
+  <div class="question" data-correct="the kindest">
+    <p>3. Cancer is __________ sign in the list.</p>
+    <div class="options">
+      <button>kind</button>
+      <button>kinder</button>
+      <button>the kindest</button>
+    </div>
+  </div>
+
+  <button id="checkQuiz" style="margin-top:15px; padding:10px 20px; background:#00796b; color:#fff; border:none; border-radius:8px; cursor:pointer; font-weight:600;">Check Answers</button>
+  <div class="result"></div>
+</section>
+
+<section id="facts" class="fade-in">
+  <h2>5. Cool Facts About Zodiac Signs 🌈</h2>
+  <p>Each zodiac sign has lucky colors, gifts they like, and things that upset them:</p>
+
+  <ul class="zodiac-list">
+    <li><strong>Aries:</strong> Lucky color: red ❤️. Likes sporty gifts 🏀. Hates laziness.</li>
+    <li><strong>Taurus:</strong> Green & pink 💚💖. Loves cozy gifts (blankets). Doesn’t like to be rushed.</li>
+    <li><strong>Gemini:</strong> Yellow 💛. Loves books and gadgets. Dislikes boring routines.</li>
+    <li><strong>Cancer:</strong> Silver & white 🌙. Likes sentimental gifts (photos). Feels hurt if ignored.</li>
+    <li><strong>Leo:</strong> Gold & orange 🦁. Likes gifts that make them feel special (jewelry). Hates criticism.</li>
+    <li><strong>Virgo:</strong> Blue & beige 💙. Loves practical gifts (planners). Dislikes messiness.</li>
+    <li><strong>Libra:</strong> Pink & light blue 🌸💧. Loves beauty gifts (perfumes). Dislikes fights.</li>
+    <li><strong>Scorpio:</strong> Dark red & black 🦂. Likes mysterious gifts. Hates lies.</li>
+    <li><strong>Sagittarius:</strong> Purple & dark blue 🏹. Loves travel gifts. Dislikes control.</li>
+    <li><strong>Capricorn:</strong> Brown & dark green 🌲. Likes practical, quality gifts. Upset by laziness.</li>
+    <li><strong>Aquarius:</strong> Electric blue & turquoise ⚡️. Loves unusual gifts. Dislikes routine.</li>
+    <li><strong>Pisces:</strong> Sea green & lavender 🐟. Likes artistic gifts. Hurt by harsh words.</li>
+  </ul>
+
+  <img class="meme" src="https://i.imgflip.com/5vlvqs.jpg" alt="Zodiac meme about colors" title="What colors suit your sign?" loading="lazy" />
+</section>
+
+<section id="homework" class="fade-in">
+  <h2>6. Homework</h2>
+  <p>Write 5 sentences about zodiac signs using adjectives in positive, comparative, and superlative forms.</p>
+  <p>Example: <em>Leo is more confident than Cancer.</em> or <em>Virgo is the most hardworking sign.</em></p>
+</section>
+
+<footer>
+  <p>© 2025 Astrology Lesson Plan  🌟</p>
+</footer>
+
+<script>
+  // Анимация появления секций
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  sections.forEach(section => observer.observe(section));
+
+  // Логика викторины
+  const checkBtn = document.getElementById('checkQuiz');
+  const resultDiv = document.querySelector('.result');
+  const questions = document.querySelectorAll('.question');
+
+  checkBtn.addEventListener('click', () => {
+    let score = 0;
+    questions.forEach(q => {
+      const correctAnswer = q.getAttribute('data-correct');
+      const buttons = q.querySelectorAll('button');
+      let answered = false;
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        if (btn.classList.contains('selected')) {
+          answered = true;
+          if (btn.textContent === correctAnswer) {
+            score++;
+            btn.classList.add('correct');
+          } else {
+            btn.classList.add('wrong');
+          }
+        }
+      });
+      if (!answered) {
+        buttons.forEach(btn => {
+          if (btn.textContent === correctAnswer) btn.classList.add('correct');
+        });
+      }
+    });
+    resultDiv.textContent = `Your score: ${score} / ${questions.length}`;
+    checkBtn.disabled = true;
+  });
+
+  questions.forEach(q => {
+    const buttons = q.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
